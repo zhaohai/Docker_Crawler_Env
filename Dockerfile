@@ -12,8 +12,7 @@ MAINTAINER Mitchell Wong Ho <oreomitch@gmail.com>
 RUN apt-get update
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update
-RUN apt-get install wget tmux build-essential software-properties-common python-software-properties -y
+RUN apt-get update &&  apt-get install wget unzip tmux libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 build-essential software-properties-common python-software-properties -y
 
 RUN wget --progress=dot:giga http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
 RUN mkdir /opt/android
