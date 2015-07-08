@@ -50,4 +50,4 @@ cp $SYSTEM_IMAGE system.img
  
  
 # Stop emulator
-# adb emu kill
+adb emu kill
