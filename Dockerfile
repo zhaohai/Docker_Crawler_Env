@@ -27,5 +27,5 @@ VOLUME ["/opt/android/android-sdk-linux"]
 # Add install_xposed.sh 
 ADD install_xposed.sh /install_xposed.sh
 RUN chmod +x /install_xposed.sh
-CMD /install_xposed.sh
+# CMD /install_xposed.sh
 
