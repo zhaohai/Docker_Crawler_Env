@@ -11,8 +11,8 @@ MAINTAINER Zhao Hai
 # Add Android SDK
 RUN apt-get update
 ENV DEBIAN_FRONTEND noninteractive
-
-RUN apt-get update &&  apt-get install kvm qemu-kvm vim curl wget unzip tmux libx11-6 libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 build-essential software-properties-common python-software-properties -y
+RUN sudo dpkg --add-architecture i386
+RUN apt-get update &&  apt-get install kvm qemu-kvm vim curl wget unzip tmux libx11-6 libx11-6:i386 libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 build-essential software-properties-common python-software-properties -y
 
 RUN wget --progress=dot:giga http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
 RUN mkdir /opt/android
