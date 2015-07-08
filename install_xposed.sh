@@ -42,7 +42,7 @@ adb shell chown $XPOSED_UID:$XPOSED_UID /data/data/de.robv.android.xposed.instal
  
  
 # Save system image
-SYSTEM_IMAGE=`grep "Mapping 'system'" emulator_log | awk '{print $NF}'`
+SYSTEM_IMAGE=`grep "mapping 'system'" emulator_log | awk '{print $NF}'`
 cp $SYSTEM_IMAGE system.img
  
  
