@@ -23,6 +23,7 @@ RUN chmod -R 744 $ANDROID_HOME
 RUN echo "y" | /opt/android/android-sdk-linux/tools/android update sdk --no-ui -a -t platform-tools,android-19,sys-img-armeabi-v7a-android-19,sys-img-x86-android-19
 
 VOLUME ["/opt/android/android-sdk-linux"]
+VOLUME ["/home/downloads"]
 
 # Add install_xposed.sh 
 ADD install_xposed.sh /install_xposed.sh
