@@ -28,5 +28,8 @@ VOLUME ["/home/downloads"]
 # Add install_xposed.sh 
 ADD install_xposed.sh /install_xposed.sh
 RUN chmod +x /install_xposed.sh
-# CMD /install_xposed.sh
+CMD /install_xposed.sh
 
+ADD start_crawler.sh /start_crawler.sh
+RUN chmod +x /start_crawler.sh
+CMD /start_crawler.sh
