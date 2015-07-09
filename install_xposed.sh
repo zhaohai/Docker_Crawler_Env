@@ -8,6 +8,7 @@ emulator -avd test -no-window -no-audio -no-skin -verbose > emulator_log &
 adb wait-for-device
  
 # Download and install Xposed
+wget http://dl-xda.xposed.info/modules/de.robv.android.xposed.installer_v33_36570c.apk -O xposed.apk
 adb install xposed.apk
  
  
