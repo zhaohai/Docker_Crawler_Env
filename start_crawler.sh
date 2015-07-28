@@ -2,7 +2,7 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 # new a emulator using system.img
-emulator -avd test -system system.img -no-window -no-audio -no-skin -verbose > emulator_log &
+emulator -avd test -system system.img -no-window -no-audio -verbose > emulator_log &
 
 mkdir /root/Downloads
 
