@@ -1,5 +1,5 @@
 # Create AVD
-android create avd -t android-19 -n test -d "Nexus 5" -b x86
+android create avd -t android-19 -n test -d "Nexus 5" -b x86 -c 200M -s WXGA720
  
 set -x
  
