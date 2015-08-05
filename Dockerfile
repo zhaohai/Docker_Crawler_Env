@@ -9,7 +9,6 @@ FROM oreomitch/ubuntu-jdk:14.04-JDK7
 MAINTAINER Zhao Hai
 
 # Add Android SDK
-RUN apt-get update
 ENV DEBIAN_FRONTEND noninteractive
 RUN dpkg --add-architecture i386
 RUN apt-get update &&  apt-get install vim curl wget unzip tmux libx11-6 libx11-6:i386 libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 build-essential software-properties-common python-software-properties -y
