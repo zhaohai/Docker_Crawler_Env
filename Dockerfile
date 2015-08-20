@@ -33,6 +33,8 @@ RUN mkdir /opt/android
 RUN tar -C /opt/android -xzvf ./android-sdk_r23.0.2-linux.tgz
 ENV ANDROID_HOME /opt/android/android-sdk-linux
 ENV PATH $ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
 RUN chmod -R 744 $ANDROID_HOME
 RUN echo "y" | /opt/android/android-sdk-linux/tools/android update sdk --no-ui -a -t platform-tools,android-19,sys-img-armeabi-v7a-android-19,sys-img-x86-android-19
 
